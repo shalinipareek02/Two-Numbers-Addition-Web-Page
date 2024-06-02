@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Two Numbers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            text-align: left;
+            color: #666;
+            font-weight: bold;
+        }
+        input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin: 5px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            background-color: #6a11cb;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #2575fc;
+        }
+        input[type="text"] {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Two Numbers</h2>
+        <form id="sumForm">
+            <label for="number1">Number 1:</label>
+            <input type="number" id="number1" name="number1" required>
+            <label for="number2">Number 2:</label>
+            <input type="number" id="number2" name="number2" required>
+            <button type="submit">Submit</button>
+            <label for="result">Result:</label>
+            <input type="text" id="result" name="result" readonly>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('sumForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const number1 = parseFloat(document.getElementById('number1').value);
+            const number2 = parseFloat(document.getElementById('number2').value);
+            const sum = number1 + number2;
+            document.getElementById('result').value = sum;
+        });
+    </script>
+</body>
+</html>
