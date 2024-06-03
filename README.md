@@ -34,13 +34,13 @@ To run this project, you need a web browser (e.g., Google Chrome, Mozilla Firefo
 
 5. The sum of the two numbers will be displayed in the third input field labeled "Result."
 
-###Contributing
+### Contributing
 Contributions are welcome! If you have any improvements or suggestions, please feel free to fork the repository and submit a pull request.
 
-###License
+### License
 This project is open-source and available under the MIT License.
 
-###Acknowledgments
+###  Acknowledgments
 The design uses the Roboto font from Google Fonts.
 The background gradient was inspired by CSS Gradient.
 Feel free to customize and improve this project as needed. Enjoy!
